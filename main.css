@@ -1,5 +1,5 @@
 html {
-    background: #e6e9e9;
+    background-image: url(Images/backgroundlandscape1.jpeg);
 }
 
 body {
@@ -75,10 +75,11 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
+  padding 12px;
+  border-radius: 5px;
 }
 
-.navbar a {
-  float: left;
+.navbar a{
   font-size: 16px;
   color: white;
   text-align: center;
@@ -86,51 +87,79 @@ body {
   text-decoration: none;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropdown_btn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
+.dropbtn {
+  background-color: #333;
   color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
 }
 
-.navbar a:hover, .dropdown:hover .dropdown_btn {
-  background-color: red;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.dropdown_content {
+.dropdown-content {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
+  background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 2;
+ position:fixed;
 }
 
-.dropdown_content a {
-  float: none;
+.dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
 }
 
-.dropdown_content a:hover {
-  background-color: #ddd;
+.donate{
+    float:right;
+    background-color:slategray;
+    color: #333;
+    
 }
 
-.dropdown:hover .dropdown_content {
-  display: block;
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #f1f1f1; color: #333;}
+
+
+.classfooter {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 200px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
 }
+
+.footer a {
+    
+    font-size: 18px;
+    padding: 3px;
+    background-color: lightgray;
+    text-decoration: none;
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
 
 
 
