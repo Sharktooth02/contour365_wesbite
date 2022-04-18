@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <title>CSS Grid example</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    </head>
+    <header class="header">
+<img alt='header_img' class='header_img' src='Images/header_img.png'>
+
+<div class="navbar">
+    
+  <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    
+  <a href="aboutus.html">About us and Contact</a>
+        
+        <div class="dropdown">
+  <button onclick="window.location.href='2022.html';" class="dropbtn">2022</button>
+  <div class="dropdown-content">
+    <a href="2020.html">2020</a>
+    <a href="2018.html">2018</a>
+    <a href="2016.html">2016</a>
+    </div>
+    </div>
+     <a class='donate' href="donate.html">Donate</a>
+        </div> 
+    </header>
+    
+<p>Donation Form</p>
+    
+    <div class="container">
+  <form action="donation_page.php">
+    <label for="flname">First and Last Name: or  </label>
+        <label for="any">Anoymous:</label>
+    <input type='checkbox' id="any" name="anonymous">
+    <input type="text" id="flname" name="firstlastname" placeholder="Your full name..">
+    <br>
+    <label for="email">Email Address or Phone Contact:</label>
+    <input type="text" id="email" name="emailaddress" placeholder="Your Email Address or Phone number ">
+<br>
+    <label for="cars">Payment Method:</label>
+  <select id="pay" name="payment">
+    <option value="visa">Visa</option>
+    <option value="saab">MasterCard</option>
+    <option value="Paypal">Paypal</option>
+    <option value="Bitcoin">Bitcoin</option>
+  </select>
+      
+    <label for="donatiom">Donation Amount</label>
+    <input type="text" id="donation" name="donation" placeholder="Donation Amount">
+<br>
+    <input type="submit" value="Redirct to Payment">
+  </form>
+</div>
+    
